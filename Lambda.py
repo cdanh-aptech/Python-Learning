@@ -1,12 +1,17 @@
-getTong = lambda a, b: a + b
 
-print(getTong(10, 30))
+def main():
+    getTong = lambda a, b: a + b
 
-def helloName(name):
-    return "Hello {0}". format(name)
+    print(getTong(10, 30))
 
-print(helloName('Duy Anh'))
+    def helloName(name):
+        return f"Hello {name}"
 
-getName = lambda name: "I am {0}".format(name)
+    print(helloName('Duy Anh'))
 
-print(getName('Duy Anh'))
+    getName = lambda name: f"I am {name}"
+
+    print(getName('Duy Anh'))
+
+if __name__ == "__main__":
+    main()
